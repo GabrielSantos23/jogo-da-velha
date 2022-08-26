@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 90vh;
+  margin-top: 10px;
+  background-color: #15141b;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#imagem {
+  background-image: url("../img/forca.png");
+  width: 234px;
+  height: 272px;
+  background-repeat: none;
+}
+#palavra-secreta {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  color: white;
+
+  margin-top: 30px;
+}
+.letras {
+  border-bottom: 2px solid #fff;
+  width: 16px;
+  text-align: center;
+  padding: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.letrasEspaco {
+  width: 16px;
+  text-align: center;
+  padding: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#teclado {
+  margin-top: 30px;
+}
+.teclas button {
+  color: black;
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  box-shadow: drop-shadow(0px 62px 215px rgba(0, 0, 0, 0.27))
+    drop-shadow(0px 18.6912px 64.8162px rgba(0, 0, 0, 0.175929))
+    drop-shadow(0px 7.76336px 26.9213px rgba(0, 0, 0, 0.135))
+    drop-shadow(0px 2.80786px 9.73692px rgba(0, 0, 0, 0.094071));
+  border-radius: 5px;
+  border: 1px solid dimgray;
+  font-weight: 900;
+  transition: transform 80ms ease-in;
+}
+.teclas button:hover {
+  transform: scale(1.2);
+}
+.teclas button:active {
+  transform: scale(0.95);
+}
+.teclas button:disabled {
+  cursor: not-allowed;
+}
+#categoria {
+  color: white;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+footer {
+  font-size: 11px;
+  display: flex;
+  align-items: flex-end;
+  height: 20vh;
+  color: white;
+  opacity: 50%;
+  margin-top: 50px;
+  justify-content: center;
+}
+@media (min-width: 321px) {
+  .teclas button {
+    width: 25px;
+    height: 25px;
+  }
+  #categoria {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 376px) {
+  .teclas button {
+    width: 30px;
+    height: 30px;
+  }
+  #palavra-secreta {
+    font-size: 1.3em;
+  }
+  #letras {
+    width: 18px;
+  }
+  #categoria {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 426px) {
+  .teclas button {
+    width: 36px;
+    height: 36px;
+  }
+  #palavra-secreta {
+    font-size: 1.5em;
+  }
+  #letras {
+    width: 20px;
+  }
+  #categoria {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 769px) {
+  .teclas button {
+    width: 68px;
+    height: 68px;
+    font-size: 2em;
+  }
+  #palavra-secreta {
+    font-size: 2.5em;
+  }
+  .letras {
+    width: 35px;
+  }
+
+  #categoria {
+    font-size: 2em;
+  }
+}
+.tecla-Q {
+  text-transform: uppercase;
+}
